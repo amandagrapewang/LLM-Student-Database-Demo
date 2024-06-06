@@ -98,7 +98,7 @@ def main():
     for result in test_results:
         print(f"学号: {result[0]}, 姓名: {result[1]}, 结果: {result[2]}")
     # 写入文档存储测试数据
-    file_path = os.path.join(os.getcwd(), 'else/test_results.txt')
+    file_path = os.path.join(os.getcwd(), 'test_results.txt')
     with open(file_path, 'w', encoding='utf-8') as file:
         for result in test_results:
             file.write(f"学号: {result[0]}, 姓名: {result[1]}, 结果: {result[2]}\n")
